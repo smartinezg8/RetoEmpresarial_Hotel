@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace RetoEmpresarial_Hotel
 {
+    //Cliente web
     public partial class Form1 : Form
     {
         UCInicio ucInicio = new UCInicio();
