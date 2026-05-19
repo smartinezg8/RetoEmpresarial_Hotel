@@ -45,10 +45,9 @@
             this.panelInicio.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelInicio.FillColor = System.Drawing.Color.Transparent;
             this.panelInicio.Location = new System.Drawing.Point(0, 0);
-            this.panelInicio.Margin = new System.Windows.Forms.Padding(4);
             this.panelInicio.Name = "panelInicio";
             this.panelInicio.ShadowDecoration.Parent = this.panelInicio;
-            this.panelInicio.Size = new System.Drawing.Size(1000, 513);
+            this.panelInicio.Size = new System.Drawing.Size(750, 417);
             this.panelInicio.TabIndex = 1;
             this.panelInicio.UseTransparentBackground = true;
             // 
@@ -57,11 +56,10 @@
             this.hotelNombre.AutoSize = true;
             this.hotelNombre.BackColor = System.Drawing.Color.Transparent;
             this.hotelNombre.Font = new System.Drawing.Font("Relicta Light", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hotelNombre.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.hotelNombre.Location = new System.Drawing.Point(37, 181);
-            this.hotelNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.hotelNombre.ForeColor = System.Drawing.Color.DimGray;
+            this.hotelNombre.Location = new System.Drawing.Point(28, 147);
             this.hotelNombre.Name = "hotelNombre";
-            this.hotelNombre.Size = new System.Drawing.Size(297, 96);
+            this.hotelNombre.Size = new System.Drawing.Size(239, 77);
             this.hotelNombre.TabIndex = 2;
             this.hotelNombre.Text = "Velisse";
             // 
@@ -71,10 +69,9 @@
             this.fraseHotel.BackColor = System.Drawing.Color.Transparent;
             this.fraseHotel.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fraseHotel.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.fraseHotel.Location = new System.Drawing.Point(36, 356);
-            this.fraseHotel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.fraseHotel.Location = new System.Drawing.Point(53, 293);
             this.fraseHotel.Name = "fraseHotel";
-            this.fraseHotel.Size = new System.Drawing.Size(239, 66);
+            this.fraseHotel.Size = new System.Drawing.Size(187, 52);
             this.fraseHotel.TabIndex = 1;
             this.fraseHotel.Text = "Más que un hotel,\r\nuna experiencia";
             // 
@@ -85,9 +82,8 @@
             this.fotoHotel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fotoHotel.Image = global::RetoEmpresarial_Hotel.Properties.Resources.HotelImage;
             this.fotoHotel.Location = new System.Drawing.Point(0, 0);
-            this.fotoHotel.Margin = new System.Windows.Forms.Padding(4);
             this.fotoHotel.Name = "fotoHotel";
-            this.fotoHotel.Size = new System.Drawing.Size(1000, 513);
+            this.fotoHotel.Size = new System.Drawing.Size(750, 417);
             this.fotoHotel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fotoHotel.TabIndex = 0;
             this.fotoHotel.TabStop = false;
@@ -95,12 +91,12 @@
             // 
             // UCInicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panelInicio);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UCInicio";
-            this.Size = new System.Drawing.Size(1000, 514);
+            this.Size = new System.Drawing.Size(750, 418);
             this.Load += new System.EventHandler(this.UCInicio_Load);
             this.panelInicio.ResumeLayout(false);
             this.panelInicio.PerformLayout();
