@@ -100,7 +100,7 @@
             this.Controls.Add(this.panelInicio);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UCInicio";
-            this.Size = new System.Drawing.Size(1000, 774);
+            this.Size = new System.Drawing.Size(1000, 514);
             this.Load += new System.EventHandler(this.UCInicio_Load);
             this.panelInicio.ResumeLayout(false);
             this.panelInicio.PerformLayout();

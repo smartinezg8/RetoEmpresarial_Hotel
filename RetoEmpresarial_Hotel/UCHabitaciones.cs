@@ -24,7 +24,10 @@ namespace RetoEmpresarial_Hotel
 
         private void btnSimple_Click(object sender, EventArgs e)
         {
-
+            UCHabitacionesDetallescs detalles = new UCHabitacionesDetallescs();
+            Form1 form = (Form1)this.FindForm();
+            form.MostrarVista(detalles);
+            
         }
     }
 }

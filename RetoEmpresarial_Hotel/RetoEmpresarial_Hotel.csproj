@@ -57,6 +57,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2Recepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2Recepcion.Designer.cs">
+      <DependentUpon>Form2Recepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogIn.Designer.cs">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UCHabitaciones.cs">
@@ -77,6 +89,18 @@
     <Compile Include="UCInicio.Designer.cs">
       <DependentUpon>UCInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCMiReserva.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMiReserva.Designer.cs">
+      <DependentUpon>UCMiReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCReservaWeb.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCReservaWeb.Designer.cs">
+      <DependentUpon>UCReservaWeb.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCServicios.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -85,6 +109,12 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2Recepcion.resx">
+      <DependentUpon>Form2Recepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogIn.resx">
+      <DependentUpon>FormLogIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,6 +134,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCInicio.resx">
       <DependentUpon>UCInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMiReserva.resx">
+      <DependentUpon>UCMiReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCReservaWeb.resx">
+      <DependentUpon>UCReservaWeb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCServicios.resx">
       <DependentUpon>UCServicios.cs</DependentUpon>
@@ -153,6 +189,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\libro-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oficina-telefonica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oficina-telefonica %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servicio-de-habitaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usd-circulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen2Hotel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

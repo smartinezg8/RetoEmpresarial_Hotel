@@ -10,12 +10,15 @@ using System.Windows.Forms;
 
 namespace RetoEmpresarial_Hotel
 {
-    //Cliente web
+    //Cliente web Form
+
     public partial class Form1 : Form
     {
         UCInicio ucInicio = new UCInicio();
         UCHabitaciones ucHabitaciones = new UCHabitaciones();
         UCServicios ucServicios = new UCServicios();
+        UCMiReserva ucMiReserva = new UCMiReserva();
+        UCReservaWeb ucReservaWeb = new UCReservaWeb();
         public Form1()
         {
             InitializeComponent();
@@ -25,7 +28,7 @@ namespace RetoEmpresarial_Hotel
             MostrarVista(ucInicio);
         }
         
-        private void MostrarVista(UserControl vista)
+        public void MostrarVista(UserControl vista)
         {
             panelContenedor.Controls.Clear();
             vista.Dock = DockStyle.Fill;
@@ -47,7 +50,18 @@ namespace RetoEmpresarial_Hotel
 
         private void btnMiReserva_Click(object sender, EventArgs e)
         {
-
+            MostrarVista(ucMiReserva);
         }
+        private void btnReservar_Click(object sender, EventArgs e)
+        {
+            MostrarVista(ucReservaWeb);
+        }
+        private void btnLogIn_Click(object sender, EventArgs e)
+        {
+            FormLogIn login = new FormLogIn();
+            login.Show();
+        }
+
+        
     }
 }

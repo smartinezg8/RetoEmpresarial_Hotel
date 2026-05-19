@@ -30,7 +30,7 @@
         {
             this.textoHabitaciones = new System.Windows.Forms.Label();
             this.tituloHabSimple = new System.Windows.Forms.Label();
-            this.btnSimple = new Guna.UI2.WinForms.Guna2Button();
+            this.btnVerMas = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -63,26 +63,26 @@
             this.tituloHabSimple.TabIndex = 4;
             this.tituloHabSimple.Text = "Simple";
             // 
-            // btnSimple
+            // btnVerMas
             // 
-            this.btnSimple.BorderColor = System.Drawing.Color.DimGray;
-            this.btnSimple.BorderRadius = 10;
-            this.btnSimple.BorderThickness = 1;
-            this.btnSimple.CheckedState.Parent = this.btnSimple;
-            this.btnSimple.CustomImages.Parent = this.btnSimple;
-            this.btnSimple.FillColor = System.Drawing.Color.Transparent;
-            this.btnSimple.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSimple.ForeColor = System.Drawing.Color.DimGray;
-            this.btnSimple.HoverState.Parent = this.btnSimple;
-            this.btnSimple.Location = new System.Drawing.Point(115, 558);
-            this.btnSimple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnSimple.Name = "btnSimple";
-            this.btnSimple.PressedColor = System.Drawing.Color.Transparent;
-            this.btnSimple.ShadowDecoration.Parent = this.btnSimple;
-            this.btnSimple.Size = new System.Drawing.Size(184, 41);
-            this.btnSimple.TabIndex = 5;
-            this.btnSimple.Text = "Ver más";
-            this.btnSimple.Click += new System.EventHandler(this.btnSimple_Click);
+            this.btnVerMas.BorderColor = System.Drawing.Color.DimGray;
+            this.btnVerMas.BorderRadius = 10;
+            this.btnVerMas.BorderThickness = 1;
+            this.btnVerMas.CheckedState.Parent = this.btnVerMas;
+            this.btnVerMas.CustomImages.Parent = this.btnVerMas;
+            this.btnVerMas.FillColor = System.Drawing.Color.Transparent;
+            this.btnVerMas.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnVerMas.ForeColor = System.Drawing.Color.DimGray;
+            this.btnVerMas.HoverState.Parent = this.btnVerMas;
+            this.btnVerMas.Location = new System.Drawing.Point(591, 555);
+            this.btnVerMas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerMas.Name = "btnVerMas";
+            this.btnVerMas.PressedColor = System.Drawing.Color.Transparent;
+            this.btnVerMas.ShadowDecoration.Parent = this.btnVerMas;
+            this.btnVerMas.Size = new System.Drawing.Size(184, 41);
+            this.btnVerMas.TabIndex = 5;
+            this.btnVerMas.Text = "Ver más";
+            this.btnVerMas.Click += new System.EventHandler(this.btnSimple_Click);
             // 
             // label1
             // 
@@ -111,7 +111,7 @@
             // 
             this.guna2PictureBox3.Image = global::RetoEmpresarial_Hotel.Properties.Resources.habitacionMatrimonial;
             this.guna2PictureBox3.Location = new System.Drawing.Point(904, 149);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
             this.guna2PictureBox3.Size = new System.Drawing.Size(397, 302);
@@ -123,7 +123,7 @@
             // 
             this.guna2PictureBox2.Image = global::RetoEmpresarial_Hotel.Properties.Resources.habitacionDoble;
             this.guna2PictureBox2.Location = new System.Drawing.Point(475, 149);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
             this.guna2PictureBox2.Size = new System.Drawing.Size(408, 302);
@@ -135,7 +135,7 @@
             // 
             this.guna2PictureBox1.Image = global::RetoEmpresarial_Hotel.Properties.Resources.habitacionSimple;
             this.guna2PictureBox1.Location = new System.Drawing.Point(32, 149);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(423, 302);
@@ -151,7 +151,7 @@
             this.AutoScrollMargin = new System.Drawing.Size(0, 10);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnSimple);
+            this.Controls.Add(this.btnVerMas);
             this.Controls.Add(this.tituloHabSimple);
             this.Controls.Add(this.textoHabitaciones);
             this.Controls.Add(this.guna2PictureBox3);
@@ -175,7 +175,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private System.Windows.Forms.Label textoHabitaciones;
         private System.Windows.Forms.Label tituloHabSimple;
-        private Guna.UI2.WinForms.Guna2Button btnSimple;
+        private Guna.UI2.WinForms.Guna2Button btnVerMas;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

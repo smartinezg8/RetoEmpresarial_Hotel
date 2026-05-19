@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnSignUp = new System.Windows.Forms.Label();
             this.btnLogIn = new System.Windows.Forms.Label();
             this.nombreHotel = new System.Windows.Forms.Label();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -44,6 +43,7 @@
             this.btnInicio = new Guna.UI2.WinForms.Guna2Button();
             this.panelContenedor = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.btnReservar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -51,13 +51,12 @@
             // 
             // guna2DragControl1
             // 
-            this.guna2DragControl1.TargetControl = null;
+            this.guna2DragControl1.TargetControl = this.guna2Panel1;
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2Panel1.Controls.Add(this.btnSignUp);
             this.guna2Panel1.Controls.Add(this.btnLogIn);
             this.guna2Panel1.Controls.Add(this.nombreHotel);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox3);
@@ -70,23 +69,15 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1000, 39);
             this.guna2Panel1.TabIndex = 0;
             // 
-            // btnSignUp
-            // 
-            this.btnSignUp.AutoSize = true;
-            this.btnSignUp.Location = new System.Drawing.Point(772, 10);
-            this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(58, 19);
-            this.btnSignUp.TabIndex = 3;
-            this.btnSignUp.Text = "Sign Up";
-            // 
             // btnLogIn
             // 
             this.btnLogIn.AutoSize = true;
-            this.btnLogIn.Location = new System.Drawing.Point(707, 9);
+            this.btnLogIn.Location = new System.Drawing.Point(768, 9);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(48, 19);
+            this.btnLogIn.Size = new System.Drawing.Size(75, 16);
             this.btnLogIn.TabIndex = 2;
-            this.btnLogIn.Text = "Log In";
+            this.btnLogIn.Text = "Iniciar sesión";
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // nombreHotel
             // 
@@ -94,7 +85,7 @@
             this.nombreHotel.Font = new System.Drawing.Font("Relicta Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreHotel.Location = new System.Drawing.Point(75, 11);
             this.nombreHotel.Name = "nombreHotel";
-            this.nombreHotel.Size = new System.Drawing.Size(57, 18);
+            this.nombreHotel.Size = new System.Drawing.Size(46, 14);
             this.nombreHotel.TabIndex = 0;
             this.nombreHotel.Text = "Velisse";
             // 
@@ -145,6 +136,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.guna2Panel2.Controls.Add(this.btnReservar);
             this.guna2Panel2.Controls.Add(this.btnMiReserva);
             this.guna2Panel2.Controls.Add(this.btnServicios);
             this.guna2Panel2.Controls.Add(this.btnHabitaciones);
@@ -163,8 +155,8 @@
             this.btnMiReserva.BorderRadius = 10;
             this.btnMiReserva.BorderThickness = 1;
             this.btnMiReserva.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnMiReserva.CheckedState.FillColor = System.Drawing.Color.Silver;
             this.btnMiReserva.CheckedState.Parent = this.btnMiReserva;
-            this.btnMiReserva.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 3);
             this.btnMiReserva.CustomImages.Parent = this.btnMiReserva;
             this.btnMiReserva.FillColor = System.Drawing.Color.Transparent;
             this.btnMiReserva.Font = new System.Drawing.Font("Relicta Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -173,7 +165,6 @@
             this.btnMiReserva.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btnMiReserva.HoverState.Parent = this.btnMiReserva;
             this.btnMiReserva.Location = new System.Drawing.Point(867, 6);
-            this.btnMiReserva.Margin = new System.Windows.Forms.Padding(3, 3, 3, 2);
             this.btnMiReserva.Name = "btnMiReserva";
             this.btnMiReserva.PressedColor = System.Drawing.Color.Transparent;
             this.btnMiReserva.ShadowDecoration.Parent = this.btnMiReserva;
@@ -280,10 +271,35 @@
             this.guna2CirclePictureBox1.TabIndex = 0;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
+            // btnReservar
+            // 
+            this.btnReservar.BackColor = System.Drawing.Color.Transparent;
+            this.btnReservar.BorderColor = System.Drawing.Color.Gray;
+            this.btnReservar.BorderRadius = 10;
+            this.btnReservar.BorderThickness = 1;
+            this.btnReservar.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.btnReservar.CheckedState.FillColor = System.Drawing.Color.Silver;
+            this.btnReservar.CheckedState.Parent = this.btnReservar;
+            this.btnReservar.CustomImages.Parent = this.btnReservar;
+            this.btnReservar.FillColor = System.Drawing.Color.Transparent;
+            this.btnReservar.Font = new System.Drawing.Font("Relicta Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReservar.ForeColor = System.Drawing.Color.DimGray;
+            this.btnReservar.HoverState.CustomBorderColor = System.Drawing.Color.Gray;
+            this.btnReservar.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.btnReservar.HoverState.Parent = this.btnReservar;
+            this.btnReservar.Location = new System.Drawing.Point(731, 6);
+            this.btnReservar.Name = "btnReservar";
+            this.btnReservar.PressedColor = System.Drawing.Color.Transparent;
+            this.btnReservar.ShadowDecoration.Parent = this.btnReservar;
+            this.btnReservar.Size = new System.Drawing.Size(121, 33);
+            this.btnReservar.TabIndex = 2;
+            this.btnReservar.Text = "Reservar";
+            this.btnReservar.UseTransparentBackground = true;
+            this.btnReservar.Click += new System.EventHandler(this.btnReservar_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1000, 600);
             this.ControlBox = false;
             this.Controls.Add(this.panelContenedor);
@@ -293,6 +309,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -316,9 +333,9 @@
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2Button btnMiReserva;
         private System.Windows.Forms.Label nombreHotel;
-        private System.Windows.Forms.Label btnSignUp;
         private System.Windows.Forms.Label btnLogIn;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2Button btnReservar;
     }
 }
 
