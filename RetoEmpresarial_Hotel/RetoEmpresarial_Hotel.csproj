@@ -95,6 +95,12 @@
     <Compile Include="UCMiReserva.Designer.cs">
       <DependentUpon>UCMiReserva.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCReservaPresencial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCReservaPresencial.Designer.cs">
+      <DependentUpon>UCReservaPresencial.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCReservaWeb.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCMiReserva.resx">
       <DependentUpon>UCMiReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCReservaPresencial.resx">
+      <DependentUpon>UCReservaPresencial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCReservaWeb.resx">
       <DependentUpon>UCReservaWeb.cs</DependentUpon>
