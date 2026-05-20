@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,6 +64,12 @@
     </Compile>
     <Compile Include="Form2Recepcion.Designer.cs">
       <DependentUpon>Form2Recepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3Admin.Designer.cs">
+      <DependentUpon>Form3Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogIn.cs">
       <SubType>Form</SubType>
@@ -96,6 +103,30 @@
     <Compile Include="UCMiReserva.Designer.cs">
       <DependentUpon>UCMiReserva.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCModificarPrecios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCModificarPrecios.Designer.cs">
+      <DependentUpon>UCModificarPrecios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCPromociones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPromociones.Designer.cs">
+      <DependentUpon>UCPromociones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCProyeccion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProyeccion.Designer.cs">
+      <DependentUpon>UCProyeccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCReportes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCReportes.Designer.cs">
+      <DependentUpon>UCReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCReservaPresencial.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -119,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2Recepcion.resx">
       <DependentUpon>Form2Recepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3Admin.resx">
+      <DependentUpon>Form3Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogIn.resx">
       <DependentUpon>FormLogIn.cs</DependentUpon>
@@ -144,6 +178,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCMiReserva.resx">
       <DependentUpon>UCMiReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCModificarPrecios.resx">
+      <DependentUpon>UCModificarPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPromociones.resx">
+      <DependentUpon>UCPromociones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProyeccion.resx">
+      <DependentUpon>UCProyeccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCReportes.resx">
+      <DependentUpon>UCReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCReservaPresencial.resx">
       <DependentUpon>UCReservaPresencial.cs</DependentUpon>
@@ -223,6 +269,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Librerias\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat-flecha-crecer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insignia-porcentaje.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

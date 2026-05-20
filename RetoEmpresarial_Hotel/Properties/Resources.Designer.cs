@@ -73,6 +73,16 @@ namespace RetoEmpresarial_Hotel.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buscar_alt {
+            get {
+                object obj = ResourceManager.GetObject("buscar-alt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calendario {
             get {
                 object obj = ResourceManager.GetObject("calendario", resourceCulture);
@@ -96,6 +106,16 @@ namespace RetoEmpresarial_Hotel.Properties {
         internal static System.Drawing.Bitmap cerrar {
             get {
                 object obj = ResourceManager.GetObject("cerrar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chat_flecha_crecer {
+            get {
+                object obj = ResourceManager.GetObject("chat-flecha-crecer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +216,16 @@ namespace RetoEmpresarial_Hotel.Properties {
         internal static System.Drawing.Bitmap Imagen2Hotel {
             get {
                 object obj = ResourceManager.GetObject("Imagen2Hotel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap insignia_porcentaje {
+            get {
+                object obj = ResourceManager.GetObject("insignia-porcentaje", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

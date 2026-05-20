@@ -26,7 +26,9 @@ namespace RetoEmpresarial_Hotel
 
             if (usuario == "admin" && contrasena == "admin")
             {
-                
+                Form3Admin form3Admin = new Form3Admin();
+                form3Admin.Show();
+                this.Close();
             }
             else if (usuario == "recepcion" && contrasena == "recepcion")
             {
