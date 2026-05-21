@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace RetoEmpresarial_Hotel
 {
-    public partial class UCReservaPresencial : UserControl
+    public partial class UCSolicitarServicios : UserControl
     {
-        public UCReservaPresencial()
+        public UCSolicitarServicios()
         {
             InitializeComponent();
         }

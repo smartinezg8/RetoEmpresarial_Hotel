@@ -91,6 +91,12 @@
     <Compile Include="UCHabitacionesDetallescs.Designer.cs">
       <DependentUpon>UCHabitacionesDetallescs.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCHuespedes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCHuespedes.Designer.cs">
+      <DependentUpon>UCHuespedes.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCInicio.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,12 +133,6 @@
     <Compile Include="UCReportes.Designer.cs">
       <DependentUpon>UCReportes.cs</DependentUpon>
     </Compile>
-    <Compile Include="UCReservaPresencial.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UCReservaPresencial.Designer.cs">
-      <DependentUpon>UCReservaPresencial.cs</DependentUpon>
-    </Compile>
     <Compile Include="UCReservaWeb.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,6 +144,18 @@
     </Compile>
     <Compile Include="UCServicios.Designer.cs">
       <DependentUpon>UCServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCSolicitarServicios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCSolicitarServicios.Designer.cs">
+      <DependentUpon>UCSolicitarServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCVerReservas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCVerReservas.Designer.cs">
+      <DependentUpon>UCVerReservas.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -173,6 +185,9 @@
     <EmbeddedResource Include="UCHabitacionesDetallescs.resx">
       <DependentUpon>UCHabitacionesDetallescs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UCHuespedes.resx">
+      <DependentUpon>UCHuespedes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UCInicio.resx">
       <DependentUpon>UCInicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,14 +206,17 @@
     <EmbeddedResource Include="UCReportes.resx">
       <DependentUpon>UCReportes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UCReservaPresencial.resx">
-      <DependentUpon>UCReservaPresencial.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UCReservaWeb.resx">
       <DependentUpon>UCReservaWeb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCServicios.resx">
       <DependentUpon>UCServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCSolicitarServicios.resx">
+      <DependentUpon>UCSolicitarServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCVerReservas.resx">
+      <DependentUpon>UCVerReservas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
