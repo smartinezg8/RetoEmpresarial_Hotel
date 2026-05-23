@@ -17,34 +17,15 @@ namespace RetoEmpresarial_Hotel
             InitializeComponent();
         }
 
-        bool expandReservas = false;
-        private void timer1_Tick(object sender, EventArgs e)
+        private void AbrirUC(UserControl UC)
         {
-            if (expandReservas == false)
-            {
-                contenedorReservas.Height += 15;
-                if (contenedorReservas.Height >= contenedorReservas.MaximumSize.Height)
-                {
-                    timer1.Stop();
-                    expandReservas = true;
-                }
-            }
-            else
-            {
-                contenedorReservas.Height -= 15;
-                if (contenedorReservas.Height <= contenedorReservas.MinimumSize.Height)
-                {
-                    timer1.Stop();
-                    expandReservas = false;
-                }
-            }
+            panelContenedorRecep.Controls.Clear();
+            UC.Dock = DockStyle.Fill;
+            panelContenedorRecep.Controls.Add(UC);
         }
+        
 
-        private void botonReservas_Click(object sender, EventArgs e)
-        {
-            timer1.Start();
-        }
-
+        //Panel expandible para clientes
         bool expandClientes = false;
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -76,6 +57,26 @@ namespace RetoEmpresarial_Hotel
         private void Form2Recepcion_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AbrirUC(new UCVerReservas());
+        }
+
+        private void btnDatosHuesped_Click(object sender, EventArgs e)
+        {
+            AbrirUC(new UCHuespedes());
+        }
+
+        private void btnSolicitarServicios_Click(object sender, EventArgs e)
+        {
+            AbrirUC (new UCSolicitarServicios());
+        }
+
+        private void btnCalcularCosto_Click(object sender, EventArgs e)
+        {
+            AbrirUC (new UCPrecioEstancia());
         }
     }
 }

@@ -28,83 +28,112 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnAgregar = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvServicios = new System.Windows.Forms.DataGridView();
+            this.label6 = new System.Windows.Forms.Label();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colHabitacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colServicio = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.colCosto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colOrigen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEstado = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.colEditar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.colGuardar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.colEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2CircleButton1
+            // btnAgregar
             // 
-            this.guna2CircleButton1.CheckedState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.CustomImages.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.FillColor = System.Drawing.Color.Gray;
-            this.guna2CircleButton1.Font = new System.Drawing.Font("Arial Narrow", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2CircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2CircleButton1.HoverState.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(705, 30);
-            this.guna2CircleButton1.Name = "guna2CircleButton1";
-            this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.ShadowDecoration.Parent = this.guna2CircleButton1;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(56, 55);
-            this.guna2CircleButton1.TabIndex = 3;
-            this.guna2CircleButton1.Text = "+";
+            this.btnAgregar.CheckedState.Parent = this.btnAgregar;
+            this.btnAgregar.CustomImages.Parent = this.btnAgregar;
+            this.btnAgregar.FillColor = System.Drawing.Color.Gray;
+            this.btnAgregar.Font = new System.Drawing.Font("Arial Narrow", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.HoverState.Parent = this.btnAgregar;
+            this.btnAgregar.Location = new System.Drawing.Point(690, 45);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnAgregar.ShadowDecoration.Parent = this.btnAgregar;
+            this.btnAgregar.Size = new System.Drawing.Size(56, 55);
+            this.btnAgregar.TabIndex = 3;
+            this.btnAgregar.Text = "+";
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(0, 110);
+            this.panel1.Controls.Add(this.dgvServicios);
+            this.panel1.Location = new System.Drawing.Point(0, 130);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(825, 280);
+            this.panel1.Size = new System.Drawing.Size(825, 376);
             this.panel1.TabIndex = 2;
             // 
-            // dataGridView1
+            // dgvServicios
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvServicios.AllowUserToAddRows = false;
+            this.dgvServicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvServicios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvServicios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
+            this.colHabitacion,
             this.colServicio,
             this.colCosto,
             this.colOrigen,
             this.colEstado,
-            this.colEditar,
+            this.colGuardar,
             this.colEliminar});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(825, 280);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvServicios.Location = new System.Drawing.Point(0, 65);
+            this.dgvServicios.Name = "dgvServicios";
+            this.dgvServicios.RowHeadersVisible = false;
+            this.dgvServicios.RowHeadersWidth = 51;
+            this.dgvServicios.Size = new System.Drawing.Size(825, 298);
+            this.dgvServicios.TabIndex = 0;
+            this.dgvServicios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicios_CellClick);
+            this.dgvServicios.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicios_CellValueChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Relicta Light", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(187, 45);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(333, 44);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Solicitar Servicios";
+            this.label6.UseWaitCursor = true;
             // 
             // colID
             // 
-            this.colID.HeaderText = "ID";
+            this.colID.HeaderText = "ID reserva";
+            this.colID.MinimumWidth = 6;
             this.colID.Name = "colID";
+            // 
+            // colHabitacion
+            // 
+            this.colHabitacion.HeaderText = "Habitación";
+            this.colHabitacion.MinimumWidth = 6;
+            this.colHabitacion.Name = "colHabitacion";
             // 
             // colServicio
             // 
             this.colServicio.HeaderText = "Servicio";
+            this.colServicio.MinimumWidth = 6;
             this.colServicio.Name = "colServicio";
             // 
             // colCosto
             // 
             this.colCosto.HeaderText = "Costo";
+            this.colCosto.MinimumWidth = 6;
             this.colCosto.Name = "colCosto";
             // 
             // colOrigen
             // 
             this.colOrigen.HeaderText = "Origen";
+            this.colOrigen.MinimumWidth = 6;
             this.colOrigen.Name = "colOrigen";
             // 
             // colEstado
@@ -113,44 +142,52 @@
             this.colEstado.Items.AddRange(new object[] {
             "Pendiente",
             "Entregado"});
+            this.colEstado.MinimumWidth = 6;
             this.colEstado.Name = "colEstado";
             this.colEstado.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.colEstado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // colEditar
+            // colGuardar
             // 
-            this.colEditar.HeaderText = "Guardar";
-            this.colEditar.Name = "colEditar";
+            this.colGuardar.HeaderText = "Guardar";
+            this.colGuardar.MinimumWidth = 6;
+            this.colGuardar.Name = "colGuardar";
             // 
             // colEliminar
             // 
             this.colEliminar.HeaderText = "Eliminar";
+            this.colEliminar.MinimumWidth = 6;
             this.colEliminar.Name = "colEliminar";
             // 
             // UCSolicitarServicios
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.guna2CircleButton1);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.panel1);
             this.Name = "UCSolicitarServicios";
             this.Size = new System.Drawing.Size(825, 567);
+            this.Load += new System.EventHandler(this.UCSolicitarServicios_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvServicios)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
+        private Guna.UI2.WinForms.Guna2CircleButton btnAgregar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvServicios;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colHabitacion;
         private System.Windows.Forms.DataGridViewComboBoxColumn colServicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCosto;
         private System.Windows.Forms.DataGridViewTextBoxColumn colOrigen;
         private System.Windows.Forms.DataGridViewComboBoxColumn colEstado;
-        private System.Windows.Forms.DataGridViewButtonColumn colEditar;
+        private System.Windows.Forms.DataGridViewButtonColumn colGuardar;
         private System.Windows.Forms.DataGridViewButtonColumn colEliminar;
     }
 }

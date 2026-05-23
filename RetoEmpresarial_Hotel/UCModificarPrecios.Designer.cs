@@ -30,26 +30,27 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtSimple = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtDoble = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMatrimonial = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.lblActualSimple = new System.Windows.Forms.Label();
+            this.lblActualDoble = new System.Windows.Forms.Label();
+            this.lblActualMatrimonial = new System.Windows.Forms.Label();
+            this.btnGuardar = new Guna.UI2.WinForms.Guna2Button();
+            this.lblMensaje = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Relicta Light", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(254, 85);
+            this.label1.Location = new System.Drawing.Point(172, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(356, 64);
+            this.label1.Size = new System.Drawing.Size(456, 82);
             this.label1.TabIndex = 0;
             this.label1.Text = "Modificar precio por noche\r\nde las habitaciones";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -63,59 +64,59 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Simple";
             // 
-            // guna2TextBox1
+            // txtSimple
             // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox1.BorderRadius = 20;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.SystemColors.Control;
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(260, 245);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(209, 34);
-            this.guna2TextBox1.TabIndex = 5;
+            this.txtSimple.BackColor = System.Drawing.Color.Transparent;
+            this.txtSimple.BorderColor = System.Drawing.Color.Gray;
+            this.txtSimple.BorderRadius = 20;
+            this.txtSimple.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSimple.DefaultText = "";
+            this.txtSimple.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSimple.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSimple.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSimple.DisabledState.Parent = this.txtSimple;
+            this.txtSimple.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSimple.FillColor = System.Drawing.SystemColors.Control;
+            this.txtSimple.FocusedState.BorderColor = System.Drawing.Color.Gray;
+            this.txtSimple.FocusedState.Parent = this.txtSimple;
+            this.txtSimple.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSimple.HoverState.Parent = this.txtSimple;
+            this.txtSimple.Location = new System.Drawing.Point(260, 245);
+            this.txtSimple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSimple.Name = "txtSimple";
+            this.txtSimple.PasswordChar = '\0';
+            this.txtSimple.PlaceholderText = "";
+            this.txtSimple.SelectedText = "";
+            this.txtSimple.ShadowDecoration.Parent = this.txtSimple;
+            this.txtSimple.Size = new System.Drawing.Size(209, 34);
+            this.txtSimple.TabIndex = 5;
             // 
-            // guna2TextBox2
+            // txtDoble
             // 
-            this.guna2TextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.BorderRadius = 20;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.SystemColors.Control;
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(260, 305);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(209, 34);
-            this.guna2TextBox2.TabIndex = 7;
+            this.txtDoble.BackColor = System.Drawing.Color.Transparent;
+            this.txtDoble.BorderColor = System.Drawing.Color.Gray;
+            this.txtDoble.BorderRadius = 20;
+            this.txtDoble.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDoble.DefaultText = "";
+            this.txtDoble.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDoble.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDoble.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDoble.DisabledState.Parent = this.txtDoble;
+            this.txtDoble.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDoble.FillColor = System.Drawing.SystemColors.Control;
+            this.txtDoble.FocusedState.BorderColor = System.Drawing.Color.Gray;
+            this.txtDoble.FocusedState.Parent = this.txtDoble;
+            this.txtDoble.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDoble.HoverState.Parent = this.txtDoble;
+            this.txtDoble.Location = new System.Drawing.Point(260, 305);
+            this.txtDoble.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDoble.Name = "txtDoble";
+            this.txtDoble.PasswordChar = '\0';
+            this.txtDoble.PlaceholderText = "";
+            this.txtDoble.SelectedText = "";
+            this.txtDoble.ShadowDecoration.Parent = this.txtDoble;
+            this.txtDoble.Size = new System.Drawing.Size(209, 34);
+            this.txtDoble.TabIndex = 7;
             // 
             // label3
             // 
@@ -126,32 +127,32 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Doble";
             // 
-            // guna2TextBox3
+            // txtMatrimonial
             // 
-            this.guna2TextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox3.BorderRadius = 20;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FillColor = System.Drawing.SystemColors.Control;
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.Gray;
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(260, 362);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(209, 34);
-            this.guna2TextBox3.TabIndex = 9;
+            this.txtMatrimonial.BackColor = System.Drawing.Color.Transparent;
+            this.txtMatrimonial.BorderColor = System.Drawing.Color.Gray;
+            this.txtMatrimonial.BorderRadius = 20;
+            this.txtMatrimonial.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtMatrimonial.DefaultText = "";
+            this.txtMatrimonial.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtMatrimonial.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtMatrimonial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatrimonial.DisabledState.Parent = this.txtMatrimonial;
+            this.txtMatrimonial.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtMatrimonial.FillColor = System.Drawing.SystemColors.Control;
+            this.txtMatrimonial.FocusedState.BorderColor = System.Drawing.Color.Gray;
+            this.txtMatrimonial.FocusedState.Parent = this.txtMatrimonial;
+            this.txtMatrimonial.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMatrimonial.HoverState.Parent = this.txtMatrimonial;
+            this.txtMatrimonial.Location = new System.Drawing.Point(260, 362);
+            this.txtMatrimonial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMatrimonial.Name = "txtMatrimonial";
+            this.txtMatrimonial.PasswordChar = '\0';
+            this.txtMatrimonial.PlaceholderText = "";
+            this.txtMatrimonial.SelectedText = "";
+            this.txtMatrimonial.ShadowDecoration.Parent = this.txtMatrimonial;
+            this.txtMatrimonial.Size = new System.Drawing.Size(209, 34);
+            this.txtMatrimonial.TabIndex = 9;
             // 
             // label4
             // 
@@ -169,7 +170,7 @@
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label5.Location = new System.Drawing.Point(315, 202);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 19);
+            this.label5.Size = new System.Drawing.Size(116, 23);
             this.label5.TabIndex = 10;
             this.label5.Text = "Nuevo precio";
             // 
@@ -180,75 +181,86 @@
             this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label6.Location = new System.Drawing.Point(584, 202);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 19);
+            this.label6.Size = new System.Drawing.Size(112, 23);
             this.label6.TabIndex = 11;
             this.label6.Text = "Precio actual";
             // 
-            // label7
+            // lblActualSimple
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(602, 245);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 19);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "$75 USD";
+            this.lblActualSimple.AutoSize = true;
+            this.lblActualSimple.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActualSimple.Location = new System.Drawing.Point(584, 250);
+            this.lblActualSimple.Name = "lblActualSimple";
+            this.lblActualSimple.Size = new System.Drawing.Size(75, 23);
+            this.lblActualSimple.TabIndex = 12;
+            this.lblActualSimple.Text = "$75 USD";
             // 
-            // label8
+            // lblActualDoble
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(602, 305);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 19);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "$150 USD";
+            this.lblActualDoble.AutoSize = true;
+            this.lblActualDoble.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActualDoble.Location = new System.Drawing.Point(584, 310);
+            this.lblActualDoble.Name = "lblActualDoble";
+            this.lblActualDoble.Size = new System.Drawing.Size(84, 23);
+            this.lblActualDoble.TabIndex = 13;
+            this.lblActualDoble.Text = "$150 USD";
             // 
-            // label9
+            // lblActualMatrimonial
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(602, 369);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 19);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "$170 USD";
+            this.lblActualMatrimonial.AutoSize = true;
+            this.lblActualMatrimonial.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActualMatrimonial.Location = new System.Drawing.Point(584, 364);
+            this.lblActualMatrimonial.Name = "lblActualMatrimonial";
+            this.lblActualMatrimonial.Size = new System.Drawing.Size(84, 23);
+            this.lblActualMatrimonial.TabIndex = 14;
+            this.lblActualMatrimonial.Text = "$170 USD";
             // 
-            // guna2Button1
+            // btnGuardar
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.LightSlateGray;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(274, 426);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(185, 37);
-            this.guna2Button1.TabIndex = 15;
-            this.guna2Button1.Text = "Guardar cambios";
+            this.btnGuardar.BorderRadius = 10;
+            this.btnGuardar.CheckedState.Parent = this.btnGuardar;
+            this.btnGuardar.CustomImages.Parent = this.btnGuardar;
+            this.btnGuardar.FillColor = System.Drawing.Color.LightSlateGray;
+            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.HoverState.Parent = this.btnGuardar;
+            this.btnGuardar.Location = new System.Drawing.Point(274, 426);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.ShadowDecoration.Parent = this.btnGuardar;
+            this.btnGuardar.Size = new System.Drawing.Size(185, 37);
+            this.btnGuardar.TabIndex = 15;
+            this.btnGuardar.Text = "Guardar cambios";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // lblMensaje
+            // 
+            this.lblMensaje.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMensaje.Location = new System.Drawing.Point(287, 465);
+            this.lblMensaje.Name = "lblMensaje";
+            this.lblMensaje.Size = new System.Drawing.Size(248, 32);
+            this.lblMensaje.TabIndex = 16;
             // 
             // UCModificarPrecios
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblMensaje);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.lblActualMatrimonial);
+            this.Controls.Add(this.lblActualDoble);
+            this.Controls.Add(this.lblActualSimple);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.guna2TextBox3);
+            this.Controls.Add(this.txtMatrimonial);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.txtDoble);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txtSimple);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UCModificarPrecios";
             this.Size = new System.Drawing.Size(787, 572);
+            this.Load += new System.EventHandler(this.UCModificarPrecios_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,16 +270,17 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txtSimple;
+        private Guna.UI2.WinForms.Guna2TextBox txtDoble;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox txtMatrimonial;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label lblActualSimple;
+        private System.Windows.Forms.Label lblActualDoble;
+        private System.Windows.Forms.Label lblActualMatrimonial;
+        private Guna.UI2.WinForms.Guna2Button btnGuardar;
+        private System.Windows.Forms.Label lblMensaje;
     }
 }

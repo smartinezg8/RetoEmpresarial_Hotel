@@ -32,7 +32,6 @@
             this.cmbMes = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCalcular = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -40,9 +39,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(320, 228);
+            this.label2.Location = new System.Drawing.Point(284, 209);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 21);
+            this.label2.Size = new System.Drawing.Size(175, 28);
             this.label2.TabIndex = 7;
             this.label2.Text = "Seleccione un mes:";
             // 
@@ -50,18 +49,18 @@
             // 
             this.cmbMes.BackColor = System.Drawing.SystemColors.Window;
             this.cmbMes.FormattingEnabled = true;
-            this.cmbMes.Location = new System.Drawing.Point(324, 252);
+            this.cmbMes.Location = new System.Drawing.Point(289, 240);
             this.cmbMes.Name = "cmbMes";
-            this.cmbMes.Size = new System.Drawing.Size(137, 21);
+            this.cmbMes.Size = new System.Drawing.Size(154, 24);
             this.cmbMes.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Relicta Light", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(225, 132);
+            this.label1.Location = new System.Drawing.Point(168, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(366, 41);
+            this.label1.Size = new System.Drawing.Size(450, 50);
             this.label1.TabIndex = 4;
             this.label1.Text = "Ingresos proyectados";
             // 
@@ -74,39 +73,28 @@
             this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCalcular.ForeColor = System.Drawing.Color.White;
             this.btnCalcular.HoverState.Parent = this.btnCalcular;
-            this.btnCalcular.Location = new System.Drawing.Point(336, 278);
+            this.btnCalcular.Location = new System.Drawing.Point(305, 269);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.ShadowDecoration.Parent = this.btnCalcular;
             this.btnCalcular.Size = new System.Drawing.Size(115, 37);
             this.btnCalcular.TabIndex = 16;
             this.btnCalcular.Text = "Calcular";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(320, 375);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(161, 21);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Ingresos proyectados:";
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(357, 407);
+            this.lblResultado.Location = new System.Drawing.Point(322, 363);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(79, 21);
+            this.lblResultado.Size = new System.Drawing.Size(0, 28);
             this.lblResultado.TabIndex = 18;
-            this.lblResultado.Text = "Resultado";
             // 
             // UCProyeccion
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.lblResultado);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbMes);
@@ -125,7 +113,6 @@
         private System.Windows.Forms.ComboBox cmbMes;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btnCalcular;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblResultado;
     }
 }

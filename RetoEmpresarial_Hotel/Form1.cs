@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Velisse.Core;
 
 namespace RetoEmpresarial_Hotel
 {
@@ -14,19 +15,25 @@ namespace RetoEmpresarial_Hotel
 
     public partial class Form1 : Form
     {
+
+        public static Hotel hotel = new Hotel("Velisse");
+        public static Cliente ClienteActual = null;
+
+        public Form1()
+        {
+            InitializeComponent();
+            hotel.CargarDatosIniciales();
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {           
+            MostrarVista(ucInicio);
+        }
         UCInicio ucInicio = new UCInicio();
         UCHabitaciones ucHabitaciones = new UCHabitaciones();
         UCServicios ucServicios = new UCServicios();
         UCMiReserva ucMiReserva = new UCMiReserva();
         UCReservaWeb ucReservaWeb = new UCReservaWeb();
-        public Form1()
-        {
-            InitializeComponent();
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            MostrarVista(ucInicio);
-        }
+
         
         public void MostrarVista(UserControl vista)
         {
@@ -50,6 +57,12 @@ namespace RetoEmpresarial_Hotel
 
         private void btnMiReserva_Click(object sender, EventArgs e)
         {
+            if (ClienteActual != null)
+                ucMiReserva.CargarReservas(ClienteActual.historial.FindAll(r => r.Estado));
+
+            else
+                ucMiReserva.CargarReservas(new List<Reserva>());
+
             MostrarVista(ucMiReserva);
         }
         private void btnReservar_Click(object sender, EventArgs e)
@@ -60,8 +73,6 @@ namespace RetoEmpresarial_Hotel
         {
             FormLogIn login = new FormLogIn();
             login.Show();
-        }
-
-        
+        }  
     }
 }

@@ -115,6 +115,12 @@
     <Compile Include="UCModificarPrecios.Designer.cs">
       <DependentUpon>UCModificarPrecios.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCPrecioEstancia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCPrecioEstancia.Designer.cs">
+      <DependentUpon>UCPrecioEstancia.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCPromociones.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UCModificarPrecios.resx">
       <DependentUpon>UCModificarPrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCPrecioEstancia.resx">
+      <DependentUpon>UCPrecioEstancia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCPromociones.resx">
       <DependentUpon>UCPromociones.cs</DependentUpon>
@@ -296,6 +305,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\insignia-porcentaje.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Velisse.Core\Velisse.Core\Velisse.Core.csproj">
+      <Project>{22fc6a8d-81df-5dd7-2f05-ee953ecb71ac}</Project>
+      <Name>Velisse.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

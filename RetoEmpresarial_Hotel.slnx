@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../Velisse.Core/Velisse.Core/Velisse.Core.csproj" />
   <Project Path="RetoEmpresarial_Hotel/RetoEmpresarial_Hotel.csproj" Id="abcbd639-982f-44bf-9f8b-16155ffdab56" />
 </Solution>

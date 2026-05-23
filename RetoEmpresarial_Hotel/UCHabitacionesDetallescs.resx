@@ -117,4 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Nuestra Habitación Simple redefine el concepto de viajar en solitario o por negocios, fusionando la sofisticación minimalista con la máxima comodidad. Espaciosa y meticulosamente iluminada con tonos cálidos, cuenta con una cama de gama alta vestida con lencería de hilos premium, un área de escritorio ejecutiva ideal para la productividad y un ventanal de piso a techo que se abre hacia los imponentes paisajes urbanos y montañosos de Medellín. Es el refugio perfecto para desconectarse del ritmo de la ciudad sin perderse de su belleza.</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value>Diseñada para quienes viajan acompañados pero valoran su espacio personal, la Habitación Doble combina amplitud, simetría y exclusividad. Equipada con dos camas de confort superior, la estancia destaca por sus acabados de lujo, como el imponente panelado de madera texturizada y una iluminación arquitectónica que crea un ambiente íntimo al caer la tarde. Su distribución inteligente y su acceso a las vistas panorámicas garantizan una estadía relajante, sofisticada y memorable para ambos huéspedes.</value>
+  </data>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>Nuestra Habitación Matrimonial es una oda al lujo idílico y al confort absoluto. Pensada para parejas que buscan una escapada excepcional, ofrece una imponente cama King-size rodeada de texturas premium, iluminación suspendida de diseño y una sutil decoración botánica que aporta frescura al ambiente. El gran ventanal difumina la línea entre el interior de la suite y el vibrante cielo de la ciudad, convirtiendo cada amanecer y atardecer en un espectáculo privado. Un espacio íntimo, elegante y profundamente acogedor.
+</value>
+  </data>
 </root>
